@@ -1,0 +1,27 @@
+<html>
+    <body bgcolor="#6495ed">
+    <form action="/display/" method="post" >
+        {% csrf_token %}
+    <table align="center" border="0">
+        <tr>
+        <th bgcolor="red">Student Information</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" placeholder="Name" required name="t1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" placeholder="Age" required name="t2">
+            </td>
+        </tr>
+        <tr>
+            <th bgcolor="#ffd700">
+                <button type="submit" >Submit</button >
+            </th>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
